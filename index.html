@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>صفحة الأستاذ سلطان الوليعي</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --color-dark: #130c65;
+            /* اللون الأول (اسم المعلم) */
+            --color-medium: #133383;
+            /* اللون الثاني (نصوص الصفوف والتذييل) */
+            --color-light: #1361bc;
+            /* اللون الثالث (خلفية الترحيب) */
+            --white: #ffffff;
+            --bg-gray: #f8fafc;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Cairo', sans-serif;
+            transition: all 0.3s ease;
+        }
+
+        body {
+            background-color: var(--bg-gray);
+            min-height: 100vh;
+            color: #333;
+            overflow-x: hidden;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* الهيدر */
+        header {
+            background-color: var(--white);
+            padding: 15px 8%;
+            display: flex;
+            justify-content: center;
+            /* توسيط الاسم واللوغو بعد حذف الزر */
+            align-items: center;
+            box-shadow: 0 2px 15px rgba(0, 0, 0, 0.05);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .brand {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .logo-img {
+            height: 80px;
+            width: auto;
+            border-radius: 10px;
+        }
+
+        header h1 {
+            font-size: 1.8rem;
+            color: var(--color-dark);
+            font-weight: 900;
+        }
+
+        /* بنر أهلاً بكم (اللون الثالث) */
+        .welcome-banner {
+            background-color: var(--color-light);
+            color: var(--white);
+            text-align: center;
+            padding: 70px 20px;
+            margin-bottom: 50px;
+            border-bottom-left-radius: 50% 30px;
+            border-bottom-right-radius: 50% 30px;
+            box-shadow: 0 10px 25px rgba(19, 97, 188, 0.15);
+        }
+
+        .welcome-banner h2 {
+            font-size: 2.8rem;
+            font-weight: 700;
+            margin: 0;
+        }
+
+        /* شبكة الصفوف */
+        .grades-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 30px;
+            margin-bottom: 60px;
+        }
+
+        .grade-link {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .grade-card {
+            background: var(--white);
+            border-radius: 25px;
+            padding: 60px 20px;
+            text-align: center;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.04);
+            border: 1px solid rgba(0, 0, 0, 0.01);
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            cursor: pointer;
+        }
+
+        .grade-card:hover {
+            transform: translateY(-12px);
+            background-color: var(--color-medium);
+            box-shadow: 0 20px 40px rgba(19, 51, 131, 0.2);
+        }
+
+        .grade-card h2 {
+            font-size: 2rem;
+            color: var(--color-medium);
+            /* اللون الثاني */
+            font-weight: 800;
+            margin: 0;
+        }
+
+        .grade-card:hover h2 {
+            color: var(--white);
+        }
+
+        /* التذييل (اللون الثاني) */
+        footer {
+            text-align: center;
+            padding: 50px 20px;
+            color: var(--color-medium);
+            /* اللون الثاني */
+            border-top: 1px solid #eee;
+            margin-top: 50px;
+        }
+
+        footer p {
+            font-weight: 800;
+            font-size: 1.2rem;
+            letter-spacing: 0.5px;
+        }
+
+        @media (max-width: 768px) {
+            .welcome-banner h2 {
+                font-size: 2rem;
+            }
+
+            header h1 {
+                font-size: 1.4rem;
+            }
+
+            .logo-img {
+                height: 60px;
+            }
+
+            .grade-card {
+                padding: 40px 15px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="brand">
+            <img src="https://i.ibb.co/fdVHgFWS/1000127244.jpg" alt="Logo" class="logo-img">
+            <h1>صفحة الأستاذ سلطان الوليعي</h1>
+        </div>
+    </header>
+
+    <div class="welcome-banner">
+        <h2>أهلاً بكم في عالم لغتي</h2>
+    </div>
+
+    <div class="container">
+        <div class="grades-container">
+            <a href="https://drive.google.com/drive/folders/1fYgB2kTAUXd3FUxGhdexyORRlvLF4yNd?usp=drive_link"
+                target="_blank" class="grade-link">
+                <div class="grade-card">
+                    <h2>الصف الرابع</h2>
+                </div>
+            </a>
+
+            <a href="https://drive.google.com/drive/folders/1n9JxDtiTRaBHo_R4WL59QOFd8DaYw8eB?usp=drive_link"
+                target="_blank" class="grade-link">
+                <div class="grade-card">
+                    <h2>الصف الخامس</h2>
+                </div>
+            </a>
+
+            <a href="https://drive.google.com/drive/folders/1Ob3rqbbbot7K3gOfOWDx4wQ0937PQFhx?usp=drive_link"
+                target="_blank" class="grade-link">
+                <div class="grade-card">
+                    <h2>الصف السادس</h2>
+                </div>
+            </a>
+
+            <a href="https://drive.google.com/drive/folders/1DqsNMIR77Mqxxod0iksaphnSziB0v4fJ?usp=drive_link"
+                target="_blank" class="grade-link">
+                <div class="grade-card">
+                    <h2>الصف السابع</h2>
+                </div>
+            </a>
+
+            <a href="https://drive.google.com/drive/folders/1xxbuLLwJrPF7wDoF19Q8S7sPsca5jK6F?usp=drive_link"
+                target="_blank" class="grade-link">
+                <div class="grade-card">
+                    <h2>الصف الثامن</h2>
+                </div>
+            </a>
+        </div>
+
+        <footer>
+            <p>تم بكل حب بواسطة الأستاذ سلطان الوليعي &copy; 2025</p>
+        </footer>
+    </div>
+
+</body>
+
+</html>
